@@ -39,7 +39,7 @@ namespace LD46.Scripts
             input.x = Input.GetAxis("Horizontal");
             input.z = Input.GetAxis("Vertical");
 
-            input.y = Input.GetAxis("Jump") - Input.GetAxis("Fire1");
+            input.y = (Input.GetAxis("Jump") - Input.GetAxis("Fire1")) / 4f;
 
             this._input = input;
 
